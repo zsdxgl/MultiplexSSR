@@ -1,0 +1,232 @@
+# WinMultiPLX thermodynamic table
+#
+# Format: PQ/RS dH dS
+# P,Q,R,S - nucleotides
+# dH Enthalpy (cal/mol)
+# dS Enthropy (kcal/mol*K)
+#
+# Source:
+# Lars Kaderali
+# Selecting Target Specific Probes
+# for DNA Arrays
+# Universität zu Köln
+# Köln, 2001
+#
+Energy+Enthropy
+#
+# Watson-Crick-Pairs
+#
+AA/TT -8400 -23.6
+TT/AA
+AC/TG -8600 -23
+GT/CA
+AG/TC -6100 -16.1
+CT/GA
+AT/TA -6500 -18.8
+CA/GT -7400 -19.3
+TG/AC
+CC/GG -6700 -15.6
+GG/CC
+CG/GC -10100 -25.5
+GA/CT -7700 -20.3
+TC/AG
+GC/CG -11100 -28.4
+TA/AT -6300 -18.5
+#
+# A-C Mismatches
+#
+AA/CT 7600 20.2
+TC/AA
+AA/TC 2300 4.6
+CT/AA
+AC/CG -700 -3.8
+GC/CA
+AC/TA 5300 14.6
+AT/CA
+AG/CC 600 -0.6
+CC/GA
+CA/AT 3400 8
+TA/AC
+CA/GC 1900 3.7
+CG/AC
+CC/AG 5200 14.2 
+GA/CC
+#
+# C-T Mismatches
+#
+AC/TT 700 0.2
+TT/CA
+AT/TC -1200 -6.2
+CT/TA
+CA/TT 1000 0.7
+TT/AC
+TA/CT 1200 0.7
+TC/AT
+CC/GT -800 -4.5
+TG/CC
+CC/TG 5200 13.5
+GT/CC
+CG/TC -1500 -6.1
+CT/GC
+GC/CT 2300 5.4
+TC/CG
+#
+# G-A Mismatches
+#
+AA/GT 3000 7.4
+TG/AA
+AA/TG -600 -2.3
+GT/AA
+AC/GG 500 3.2
+GG/CA
+AG/GC -4000 -13.2
+CG/GA
+AG/TA -700 -2.3
+AT/GA
+CA/GG
+GG/AC
+GA/AT 700 0.7
+TA/AG
+GA/CG -600 -1
+GC/AG
+#
+# G-T Mismatches
+#
+AG/TT 1000 0.9
+TT/GA
+AT/TG -2500 -8.3
+GT/TA
+CG/GT -4100 -11.7
+TG/GC
+CT/GG -2800 -8
+GG/TC
+GA/TT -1300 -5.3
+TT/AG
+GC/TG -4400 -12.3
+GT/CG
+GG/CT 3300 10.4
+TC/GG
+TA/GT -100 -1.7
+TG/AT
+#
+# A-A Mismatches
+#
+AA/AT 4700 12.9
+TA/AA
+AA/TA 1200 1.7
+AT/AA
+AC/AG -2900 -9.8
+GA/CA
+AG/AC -900 -4.2
+CA/GA
+#
+# C-C Mismatches
+#
+AC/TC 0 -4.4
+CT/CA
+CA/CT 6100 16.4
+TC/AC
+CC/CG 3600 8.9
+GC/CC
+CC/GC -1500 -7.2
+CG/CC
+#
+# G-G Mismatches
+#
+AG/TG -3100 -9.5
+GT/GA
+CG/GG -4900 -15.3
+GG/GC
+GA/GT 1600 3.6
+TG/AG
+GC/GG -6000 -15.8
+GG/CG
+#
+# T-T Mismatches
+#
+AT/TT -2700 -10.8
+TT/TA
+CT/GT -5000 -15.8
+TG/TC
+GT/CT -2200 -8.4
+TC/TG
+TA/TT 200 -1.5
+TT/AT
+#
+# Dangling Ends
+#
+$A/AT -700 -0.8
+TA/A$ -700 -0.8
+$A/CT 4400 14.9
+TC/A$
+$A/GT -1600 -3.6
+TG/A$
+$A/TT 2900 10.4
+TT/A$
+$C/AG -2100 -3.9
+GA/C$
+$C/CG -200 -0.1
+GC/C$
+$C/GG -3900 -11.2
+GG/C$
+$C/TG -4400 -13.1
+GT/C$
+$T/GA -4100 -13.1
+AG/T$
+$G/AC -5900 -16.5
+CA/G$
+$G/CC -2600 -7.4
+CC/G$
+$G/GC -3200 -10.4
+CG/G$
+$G/TC -5200 -15
+CT/G$
+A$/TG -4200 -15
+GT/$A
+$T/AA -500 -1.1
+AA/T$
+$T/CA 4700 14.2
+AC/T$
+$T/TA -3800 -12.6
+AT/T$
+A$/TA -2900 -7.6
+AT/$A
+A$/TC -4100 -13
+CT/$A
+A$/TT -200 -0.5
+TT/$A
+AA/$T 200 2.3
+T$/AA
+AC/$G -6300 -17.1
+G$/CA
+AG/$C -3700 -10
+C$/GA
+C$/GC -4000 -11.9
+CG/$C
+C$/GG -3900 -10.9
+GG/$C
+C$/GT -4900 -13.8
+TG/$C
+CA/$T 600 3.3
+T$/AC
+CC/$G -4400 -12.6
+G$/CC
+G$/CG -5100 -14
+GC/$G
+G$/CT -4000 -10.9
+TC/$G
+GA/$T -1100 -1.6
+T$/AG
+T$/AT -6900 -20
+TA/$T
+#
+# Double Mismatches
+#
+iloop 0.0 -0.97
+#
+# Opening and closing defaults
+#
+obulge_match -2660 -14.22
+cbulge_match
+obulge_mism 0.0 -6.45
+cbulge_mism
