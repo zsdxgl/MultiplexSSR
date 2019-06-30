@@ -1,4 +1,4 @@
-Manual of multiplex PCR
+Manual of multiplexPCR
 
 1. About multiplex PCR
 
