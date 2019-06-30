@@ -7,11 +7,11 @@ Manual of multiplex PCR
 2. MultiplexSSR.pl packages six programs, including: 
 
    1) Tandem Repeats Finder		http://tandem.bu.edu/trf/trf.html
-   2) Lobstr				      		http://lobstr.teamerlich.org/
-   3) BWA				          		http://bio-bwa.sourceforge.net/
-   4) SAMtools		      			http://samtools.sourceforge.net/
-   5) ePCR					        	https://launchpad.net/ubuntu/+source/epcr/
-   6) Multiplx			      		http://bioinfo.ut.ee/?page_id=167
+   2) Lobstr				http://lobstr.teamerlich.org/
+   3) BWA				http://bio-bwa.sourceforge.net/
+   4) SAMtools		      		http://samtools.sourceforge.net/
+   5) ePCR				https://launchpad.net/ubuntu/+source/epcr/
+   6) Multiplx			      	http://bioinfo.ut.ee/?page_id=167
 
    The directory structure
    
@@ -43,6 +43,9 @@ Manual of multiplex PCR
    ├── MultiplexSSR.pl
    └── random.pl
 
+   The script MultiplexSSR.pl can automaticly obtain the path of BWA and SAMtools. Other four programs can be installed independently and the pathes need be changed by manually from line 43 to 47.
+   
+   
 3. MultiplexSSR.pl includes six steps:
 
    1) The tandem repeats are first detected using Tandem Repeats Finder. 
@@ -94,15 +97,34 @@ Manual of multiplex PCR
        
        MultiplexSSR.pl –t 20
     
-    9.2 Run the pipeline in skip model. This model skip the first two steps with two advantages. The step of genotyping is skipped, which is not necessary for parameter adjustment and time wasting. The other sourced genotypes of SSRs and SNPs could be conveniently used. Only ePCR is dependent.
+    9.2 Run the pipeline in skip model. This model skip the first two steps with two advantages. The step of genotyping is skipped, which is not necessary for parameter adjustment and time wasting. The other sourced genotypes of SSRs and SNPs could be conveniently used. This model is only depend on ePCR and needs reference.fa.2.7.7.80.10.50.500.mask, reference.fa, SSR.vcf and SNP.vcf as input.
     
        MultiplexSSR.pl –s T –d 5
     
-10. The results
+10. The results of MultiplexSSR.pl
 
-	1) The primers for each SSR
-	2) The SSR groups
+	1) Multiplex.summary.txt: the primers for each SSR
+	2) Multiplex.primer.txt: the SSR groups
+	
+	Intermediate results
+	
+	1) SNP.vcf: the called SNPs
+	2) SSR.vcf: the called SSRs
+	3) reference.fa.2.7.7.80.10.50.500.mask: The masked reference by Tandem Repeats Finder
+	4) primer.f.txt: the designed primers
+	5) primer.ff.txt: the specific primers after filtered with ePCR
     
 11. Check the saturation with individual number
     
         random.pl –i SSR.vcf
+	
+12. The results of random.pl
+
+        1) random.pairs.panels.tiff
+	2) random.AlleleNumber.IndividualNumber.tiff
+	3) random.Range.IndividualNumber.tiff
+	4) random.Maximum.IndividualNumber.tiff
+	5) random.Minimum.IndividualNumber.tiff
+	6) random.text.txt
+	
+	
