@@ -13,6 +13,35 @@ Manual of multiplex PCR
    5) ePCR					        	https://launchpad.net/ubuntu/+source/epcr/
    6) Multiplx			      		http://bioinfo.ut.ee/?page_id=167
 
+   The directory structure
+   
+   ├── bin
+   │   ├── ePCR
+   │   │   ├── e-PCR
+   │   │   ├── fahash
+   │   │   ├── famap
+   │   │   └── re-PCR
+   │   ├── lobSTR
+   │   │   ├── bin
+   │   │   └── share
+   │   ├── Multiplx
+   │   │   ├── cmultiplx
+   │   │   ├── primers-100.txt
+   │   │   ├── thermodynamics.txt
+   │   │   └── thermodynamics.txt.primer3
+   │   ├── primer3-2.4.0
+   │   │   ├── cmp_settings.pl
+   │   │   ├── create_test_folders.pl
+   │   │   ├── example
+   │   │   ├── kmer_lists
+   │   │   ├── LICENSE
+   │   │   ├── README.md
+   │   │   ├── settings_files
+   │   │   ├── src
+   │   │   └── test
+   │   └── trf409.linux64
+   ├── MultiplexSSR.pl
+   └── random.pl
 
 3. MultiplexSSR.pl includes six steps:
 
