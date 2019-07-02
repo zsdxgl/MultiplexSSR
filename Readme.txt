@@ -61,7 +61,7 @@ Manual of multiplexPCR
 4. random.pl is dependent on three R pacakges
 
    1)	psych		
-   2)	airquality
+   2)	PMCMR
    3)	ggplot2
 
 
@@ -121,10 +121,11 @@ Manual of multiplexPCR
 12. The results of random.pl
 
         1) random.pairs.panels.tiff
-	2) random.AlleleNumber.IndividualNumber.tiff
-	3) random.Range.IndividualNumber.tiff
-	4) random.Maximum.IndividualNumber.tiff
-	5) random.Minimum.IndividualNumber.tiff
+	2) random.AlleleNumber_IndividualNumber.tiff
+	3) random.Range_IndividualNumber.tiff
+	4) random.Maximum_IndividualNumber.tiff
+	5) random.Minimum_IndividualNumber.tiff
 	6) random.text.txt
 	
+
 	
