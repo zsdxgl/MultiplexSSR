@@ -1,8 +1,8 @@
 Manual of multiplexPCR
 
-1. About multiplex PCR
+1. About multiplexPCR
 
-    The aim of the pipeline is to develop multiplex SSR-PCRs with resequencing data. This pipeline includes two scripts, MultiplexSSR.pl and random.pl. MultiplexSSR.pl takes resequencing data as input to develop multiplex SSR-PCRs. random.pl takes SSRs in vcf format as input to access the saturation of allele number, range, maximum position and minimum position with the increase of individual number for each SSR.
+    The aim of the pipeline is to develop multiplex SSR-PCRs with resequencing data. This pipeline includes two scripts, MultiplexSSR.pl and random.pl. MultiplexSSR.pl takes resequencing data as input to develop multiplex SSR-PCRs. random.pl takes SSRs in vcf format as input to assess the saturation of allele number, range, maximum position and minimum position with the increase of individual number for each SSR.
 
 2. MultiplexSSR.pl packages six programs, including: 
 
@@ -67,7 +67,7 @@ Manual of multiplexPCR
 
 5. random.pl includes two steps:
 
-   1)	The alleles for each SSR are counted for number, range, maximum size and minimum size. The maximum individual number is automatically detected and the minimum individual number is set five.
+   1)	The alleles for each SSR are counted for number, range, maximum size and minimum size. The maximum individual number is automatically detected and the minimum individual number is set to five.
    2)	The relationship between number, range, maximum size and minimum size with individual number is tested and showed as graphs.
 
 
