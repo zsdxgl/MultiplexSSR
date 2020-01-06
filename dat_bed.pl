@@ -1,7 +1,7 @@
 #!/usr/bin/perl -w
 use strict;
 my $chr="";
-open IN, "Final.2017.6.26.gfasta.2.7.7.80.10.50.500.dat";
+open IN, "reference.fa.2.7.7.80.10.50.500.dat";
 open OUT,">str_bed_file";
 while(<IN>){
 	if(/Sequence: (\d+)/){$chr=$1};
