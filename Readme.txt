@@ -1,4 +1,5 @@
 Manual of multiplexPCR
+(Email:zsdxgl@163.com)
 
 1. About multiplexPCR
 
