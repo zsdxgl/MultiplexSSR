@@ -127,5 +127,13 @@ Manual of multiplexPCR
 	5) random.Minimum_IndividualNumber.tiff
 	6) random.text.txt
 	
-
+13. The SSR count in the reference
 	
+	###under the current path
+	###need the file reference.fa.2.7.7.80.10.50.500.dat
+	###format change
+	perl ./dat_bed.pl
+	###count the SSR by length
+	perl ./stastic.misa.length100.pl
+	###count the SSR by repeat time of motif
+	perl ./stastic.misa.pl
