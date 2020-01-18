@@ -137,4 +137,4 @@ Manual of multiplexPCR
 	###count the SSR by length
 	perl ./stastic.misa.length100.pl
 	###count the SSR by repeat number of motif
-	perl ./stastic.misa.pl
+	perl ./stastic.misa.motif.pl
